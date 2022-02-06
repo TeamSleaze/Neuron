@@ -1,0 +1,216 @@
+:root {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #bfbfbf;
+    --color-text-dark-primary: #000000;
+
+    --background-color-primary: #0f111a;
+    --background-color-secondary: #090b10;
+    --background-color-border: #06070a;
+
+    --font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter", sans-serif;
+    --control-corner-radius: 4px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif;
+  color: var(--color-text-primary);
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffbd0f;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-color-secondary);
+  align-items: center;
+  border: 1px solid var(--background-color-border);
+}
+
+.navigation p {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.navigation .status {
+  display: flex;
+  margin-left: auto;
+  padding: 0.75rem;
+  image-rendering: pixelated;
+  align-self: center;
+}
+
+.navigation a img {
+  vertical-align: middle;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 8rem;
+}
+
+.left-panel .upper {
+  flex-basis: 2.5rem;
+  background-color: #ff2e42;
+}
+
+.left-panel .mid {
+  flex: 1;
+  background-color: #e31a2c;
+}
+
+.left-panel .lower {
+  flex-basis: 2.5rem;
+  background-color: #cc0517;
+}
+
+.main-panel {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: var(--background-color-primary);
+  overflow-x: auto;
+}
+
+.main-panel .content {
+  display: flex;
+  min-height: min-content;
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+/* List Item */
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  min-height: 8rem;
+  height: fit-content;
+  margin: 0.75rem;
+  background-color: var(--background-color-secondary);
+  border-radius: var(--control-corner-radius);
+  border: 1px solid var(--background-color-border);
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.75));
+}
+
+.list .list-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.list .list-title {
+  display: flex;
+  margin: 0.5rem 0.5rem 0.5rem 0.75rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text-primary);
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif;
+  vertical-align: middle;
+  resize: none;
+  overflow-y: hidden;
+  border: none;
+  background-color: transparent;
+  width: max-content;
+  height: fit-content;
+
+  padding: 0.25rem 0.3rem 0.25rem 0.3rem;
+}
+
+.list .list-options {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.list .list-options a i {
+  color: var(--color-text-primary);
+  margin: 0 0.35rem 0 0;
+  cursor: pointer;
+}
+
+/* Card Item */
+.list .card {
+  display: flex;
+  flex-direction: column;
+  min-height: 5rem;
+  margin: 0.75rem;
+  background-color: #0f111a;
+  border-radius: var(--control-corner-radius);
+  border: 1px solid var(--background-color-border);
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.75));
+}
+
+.list .card .card-tag-link {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  z-index: 10;
+}
+
+.list .card .card-tag-link .card-tag {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  padding: 0.15rem 0.25rem;
+  margin: 0.5rem;
+  margin-bottom: 0.25rem;
+
+  min-width: 2rem;
+  width: fit-content;
+
+  border-radius: var(--control-corner-radius);
+  background-color: #03ce7b;
+}
+
+.list .card .title {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.85rem;
+  padding: 0 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.list .card .assignees {
+  display: grid;
+  grid-template-columns: repeat(5, 32px);
+  gap: 0.375rem;
+  row-gap: 0.1875rem;
+
+  margin: 0.5rem;
+}
+
+.list .card .assignees .assignee {
+  z-index: 10;
+}
+
+.list .card .assignees img {
+  width: 32px;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.75));
+}
+
+.list .card .card-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
