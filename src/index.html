@@ -1,183 +1,177 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>ManagmentApp</title>
-    <link rel="stylesheet" href="index.css" />
 
-    <script defer src="https://kit.fontawesome.com/e550f88b2c.js" crossorigin="anonymous"></script>
-    <script defer src="card_content/card_tag.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>ManagmentApp</title>
+  <link rel="stylesheet" href="index.css" />
 
-  <body>
-    <div class="grid-wrapper">
-      <div class="navigation">
-        <p>Navigation</p>
+  <script defer src="https://kit.fontawesome.com/e550f88b2c.js" crossorigin="anonymous"></script>
+  <script defer src="card_content/card_tag.js"></script>
+</head>
 
-        <span class="status">
-            <a id="status-title">
-                <img id="status" width="16" height="16">
-            </a>
-        </span>
-        <script src="status.js"></script>
+<body>
+  <div class="grid-wrapper">
+    <div class="navigation">
+      <p>Navigation</p>
 
-      </div>
-      <div class="body">
-        <div class="left-panel">
-          <div class="left-panel upper">
+      <script defer src="status.js"></script>
+      <span class="status">
+        <a id="status-title">
+          <img id="status" width="26px" height="26px">
+        </a>
+      </span>
 
-          </div>
-          <div class="left-panel mid">
-          
-          </div>
-          <div class="left-panel lower">
-          
-          </div>
+    </div>
+    <div class="body">
+      <div class="left-panel">
+        <div class="left-panel upper">
+
         </div>
-        <div class="main-panel">
-          <div class="content">
+        <div class="left-panel mid">
 
-            <!-- List Item -->
-            <div class="list">
-              <div class="list-navigation">
-                <textarea class="list-title" spellcheck="false" id="textArea-1"
-                dir="auto" maxlength="512" onchange="updateTitle()">Brainstorming / Ideas / Testing</textarea>
+        </div>
+        <div class="left-panel lower">
+          <button id="modal-window-btn">
+            Modal Window
+          </button>
+        </div>
+      </div>
+      <div class="main-panel">
+        <div class="content">
 
-                
+          <!-- List Item -->
+          <div class="list">
+            <div class="list-navigation">
+              <p class="list-title" id="textarea-1" maxlength="512" 
+              contenteditable="true" spellcheck="false">Brainstorming / Ideas /
+                Testing</p>
 
-                <span class="list-options">
-                  <a href="#list-options">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </a>
-                </span>
-              </div>
-
-              <!-- Card Item -->
-              <div class="card">
-                <!-- Card Info -->
-                <a href="#card-tag-link" class="card-tag-link">
-                  <span class="card-tag" text="Tag" color="#e31a2c">
-                    Bug Fix
-                  </span>
+              <span class="list-options">
+                <a href="#list-options">
+                  <i class="fas fa-ellipsis-v"></i>
                 </a>
-                <span class="title">
-                  Lorem ipsum dolor sit amet consectetur
-                </span>
-              
-                <!-- Contributors -->
-                <span class="assignees" dir="rtl">
-                  <a href="#sleaze" class="assignee">
-                    <img src="assets/sleaze.png" alt="Sleaze">
-                  </a>
-                  <a href="#roba" class="assignee">
-                    <img src="assets/roba.png" alt="Sleaze">
-                  </a>
-                </span>
-
-                <a href="#card-link" class="card-link"></a>
-              </div>
+              </span>
             </div>
 
-
-
-            <!-- List Item -->
-            <div class="list">
-              <div class="list-navigation">
-                <textarea class="list-title" spellcheck="false" 
-                dir="auto" maxlength="512">To Do</textarea>
-            
-                <span class="list-options">
-                  <a href="#list-options">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </a>
-                </span>
-              </div>
-            
-              <!-- Card Item -->
-              <div class="card">
-                <!-- Card Info -->
-                <a href="#card-tag-link" class="card-tag-link">
-                  <span class="card-tag" text="Tag" color="#3fb950">
-                    Addition
-                  </span>
+            <!-- Card Item -->
+            <div class="card">
+              <!-- Card Info -->
+              <div class="card-tag-link">
+                <a href="#tag-01" class="card-tag" text="Tag" color="#e31a2c">
+                  Bug Fix
                 </a>
-                <span class="title">
-                  Lorem ipsum dolor sit amet consectetur
-                </span>
-            
-                <!-- Contributors -->
-                <span class="assignees" dir="rtl">
-                  <a href="#sleaze" class="assignee">
-                    <img src="assets/sleaze.png" alt="Sleaze">
-                  </a>
-                </span>
-            
-                <a href="#card-link" class="card-link"></a>
-              </div>
-
-              <!-- Card Item -->
-              <div class="card">
-                <!-- Card Info -->
-                <a href="#card-tag-link" class="card-tag-link">
-                  <span class="card-tag" text="Tag" color="#ffbd0f">
-                    Testing
-                  </span>
+                <a href="#tag-02" class="card-tag" text="Tag" color="#c792ea">
+                  Prototype
                 </a>
-                <span class="title">
-                  Lorem ipsum dolor sit amet consectetur
-                </span>
-              
-                <!-- Contributors -->
-                <span class="assignees" dir="rtl">
-                  
-                </span>
-              
-                <a href="#card-link" class="card-link"></a>
               </div>
+              <span class="title">
+                Lorem ipsum dolor sit amet consectetur
+              </span>
+
+              <!-- Contributors -->
+              <span class="assignees" dir="rtl">
+                <a href="#sleaze" class="assignee">
+                  <img src="assets/sleaze.png" alt="Sleaze">
+                </a>
+                <a href="#roba" class="assignee">
+                  <img src="assets/roba.png" alt="Sleaze">
+                </a>
+              </span>
+
+              <a href="#card-link" class="card-link"></a>
+            </div>
+          </div>
+
+
+
+          <!-- List Item -->
+          <div class="list">
+            <div class="list-navigation">
+              <p class="list-title" id="textarea-1" maxlength="512" 
+              contenteditable="true" spellcheck="false">To Do</p>
+
+              <span class="list-options">
+                <a href="#list-options">
+                  <i class="fas fa-ellipsis-v"></i>
+                </a>
+              </span>
             </div>
 
-
-
-
-
-            <!-- List Item -->
-            <div class="list">
-              <div class="list-navigation">
-                <textarea class="list-title" spellcheck="false" 
-                dir="auto" maxlength="512">Finished</textarea>
-            
-                <span class="list-options">
-                  <a href="#list-options">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </a>
-                </span>
-              </div>
-            
-              <!-- Card Item -->
-              <div class="card">
-                <!-- Card Info -->
-                <a href="#card-tag-link" class="card-tag-link">
-                  <span class="card-tag" text="Tag" color="#037bd3">
-                    Visual Effects Graph
-                  </span>
+            <!-- Card Item -->
+            <div class="card">
+              <!-- Card Info -->
+              <div class="card-tag-link">
+                <a href="#tag-03" class="card-tag" text="Tag" color="#3fb950">
+                  Addition
                 </a>
-                <span class="title">
-                  Lorem ipsum dolor sit amet consectetur
-                </span>
-            
-                <!-- Contributors -->
-                <span class="assignees" dir="rtl">
-                  
-                </span>
-            
-                <a href="#card-link" class="card-link"></a>
               </div>
+              <span class="title">
+                Lorem ipsum dolor sit amet consectetur
+              </span>
+
+              <!-- Contributors -->
+              <span class="assignees" dir="rtl">
+                <a href="#sleaze" class="assignee">
+                  <img src="assets/sleaze.png" alt="Sleaze">
+                </a>
+              </span>
+
+              <a href="#card-link" class="card-link"></a>
             </div>
-            
+
+            <!-- Card Item -->
+            <div class="card">
+              <!-- Card Info -->
+              <div class="card-tag-link">
+                <a href="#tag-04" class="card-tag" text="Tag" color="#ffbd0f">
+                  Testing
+                </a>
+              </div>
+              <span class="title">
+                Lorem ipsum dolor sit amet consectetur
+              </span>
+
+              <!-- Contributors -->
+              <span class="assignees" dir="rtl">
+
+              </span>
+
+              <a href="#card-link" class="card-link"></a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+
+  <script defer src="modal_windows/card_modal.js"></script>
+  <div class="modal" id="modal-card">
+    <div class="modal-content">
+
+      <div class="header">
+        <span>Modal Window</span>
+        <close id="modal-window-close-btn">X</close>
+      </div>
+
+      <div class="content">
+        <div class="quick-actions">quick-actions</div>
+        <div class="discription">discription</div>
+        <div class="labels">labels</div>
+        <div class="assignees">assignees</div>
+        <div class="date-start">date-start</div>
+        <div class="date-end">date-end</div>
+        <div class="comments">comments</div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</body>
+
 </html>
 
 <!--

@@ -4,6 +4,7 @@
     --color-text-dark-primary: #000000;
 
     --background-color-primary: #0f111a;
+    --background-color-primary-80: #0f111a80;
     --background-color-secondary: #090b10;
     --background-color-border: #06070a;
 
@@ -24,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #ffbd0f;
 }
 
 .navigation {
@@ -44,12 +44,8 @@ body {
   display: flex;
   margin-left: auto;
   padding: 0.75rem;
-  image-rendering: pixelated;
   align-self: center;
-}
-
-.navigation a img {
-  vertical-align: middle;
+  filter: contrast(100);
 }
 
 .body {
@@ -117,21 +113,20 @@ body {
 .list .list-title {
   display: flex;
   margin: 0.5rem 0.5rem 0.5rem 0.75rem;
+  padding: 0.25rem 0.3rem 0.25rem 0.3rem;
+
   font-weight: 500;
   font-size: 1rem;
   color: var(--color-text-primary);
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   vertical-align: middle;
-  resize: none;
-  overflow-y: hidden;
+  
   border: none;
   background-color: transparent;
+  
+  resize: none;
   width: max-content;
   height: fit-content;
-
-  padding: 0.25rem 0.3rem 0.25rem 0.3rem;
 }
 
 .list .list-options {
@@ -158,9 +153,11 @@ body {
 }
 
 .list .card .card-tag-link {
-  text-decoration: none;
+  display: flex;
+  margin: 0 0.25rem;
+
   color: var(--color-text-primary);
-  z-index: 10;
+  cursor: pointer;
 }
 
 .list .card .card-tag-link .card-tag {
@@ -169,16 +166,18 @@ body {
 
   font-size: 0.8rem;
   font-weight: 500;
+  text-decoration: none;
+  color: var(--color-text-primary);
 
   padding: 0.15rem 0.25rem;
-  margin: 0.5rem;
-  margin-bottom: 0.25rem;
+  margin: 0.5rem 0.25rem 0.25rem 0.25rem;
 
   min-width: 2rem;
   width: fit-content;
 
   border-radius: var(--control-corner-radius);
   background-color: #03ce7b;
+  z-index: 10;
 }
 
 .list .card .title {
@@ -214,3 +213,101 @@ body {
   width: 100%;
   height: 100%;
 }
+
+
+/* Modal Window */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: auto;
+
+  background-color: var(--background-color-primary-80);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  min-height: 60vh;
+
+  background-color: var(--background-color-primary);
+  border: 1px solid var(--background-color-border);
+}
+
+.modal-content .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-content .header close {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.modal-content .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  background-color: #03ce7b;
+}
+
+.modal-content .content .quick-actions {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #ffbd0f;
+}
+
+.modal-content .content .discription {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #fc790f;
+}
+
+.modal-content .content .labels {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #0ffcb5;
+}
+
+.modal-content .content .assignees {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #0ffc37;
+}
+
+.modal-content .content .date-start {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #0fb1fc;
+}
+
+.modal-content .content .date-end {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #0f33fc;
+}
+
+.modal-content .content .comments {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #fc0fad;
+}
+
+
