@@ -208,10 +208,11 @@ body {
   filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.75));
 }
 
-.list .card .card-link {
+.list .card .open-modal {
   position: absolute;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 
