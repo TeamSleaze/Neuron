@@ -141,7 +141,7 @@ body {
 }
 
 /* Card Item */
-.list .card {
+neuron-card {
   display: flex;
   flex-direction: column;
   min-height: 5rem;
@@ -151,8 +151,8 @@ body {
   border: 1px solid var(--background-color-border);
   filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.75));
 }
-
-.list .card .card-tag-link {
+/*
+.card-tag-link {
   display: flex;
   margin: 0 0.25rem;
 
@@ -160,7 +160,7 @@ body {
   cursor: pointer;
 }
 
-.list .card .card-tag-link .card-tag {
+.card-tag-link .card-tag {
   display: flex;
   flex-direction: column;
 
@@ -180,7 +180,7 @@ body {
   z-index: 10;
 }
 
-.list .card .title {
+.title {
   display: flex;
   flex-direction: column;
 
@@ -189,7 +189,7 @@ body {
   margin: 0.25rem 0;
 }
 
-.list .card .assignees {
+.assignees {
   display: grid;
   grid-template-columns: repeat(5, 32px);
   gap: 0.375rem;
@@ -198,23 +198,23 @@ body {
   margin: 0.5rem;
 }
 
-.list .card .assignees .assignee {
+.assignees .assignee {
   z-index: 10;
 }
 
-.list .card .assignees img {
+.assignees img {
   width: 32px;
   border-radius: 4px;
   filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.75));
 }
 
-.list .card .open-modal {
+.open-modal {
   position: absolute;
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
-
+*/
 
 /* Modal Window */
 .modal {

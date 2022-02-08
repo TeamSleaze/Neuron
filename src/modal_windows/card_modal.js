@@ -20,3 +20,7 @@ window.onclick = function(event) {
         modalWindow.style.display = 'none';
     }
 }
+
+function openModalWindow() {
+    modalWindow.style.display = 'block';
+}
