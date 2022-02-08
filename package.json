@@ -1,5 +1,5 @@
 {
-  "name": "managmentapp",
+  "name": "neuron",
   "version": "1.0.0",
   "description": "App for managing tasks, projects and collaborate in teams",
   "main": "main.js",
