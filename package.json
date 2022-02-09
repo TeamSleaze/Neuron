@@ -1,15 +1,5 @@
 {
-  "name": "neuron",
-  "version": "1.0.0",
-  "description": "App for managing tasks, projects and collaborate in teams",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "keywords": [],
-  "author": "SleazeStiKs",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^17.0.0"
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }
