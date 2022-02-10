@@ -6,9 +6,9 @@ App for managing tasks, projects and collaborate in teams
 
 | Database            | Latest Supported Version | Status  |
 |:------------------- |:------------------------:|:-------:|
-| Local Storage       | ---                      |         |
-| Firebase Firestore  | ---                      |         |
-| Google Spreadsheets | ---                      |         |
+| Local Storage       |                          |         |
+| Firebase Firestore  |                          |         |
+| Google Spreadsheets |                          |         |
 
 **r** = *Release* (**Stable** Version)
 
