@@ -10,7 +10,7 @@ class NeuronList extends React.Component {
         return (
         <div className="list">
             <div className="list-navigation">
-                <p className="list-title" id="" maxLength="512" 
+                <p className="list-title" id="title-editable" maxLength="512" 
                 contentEditable="true" spellCheck="false">
                     {this.props.title}
                 </p>

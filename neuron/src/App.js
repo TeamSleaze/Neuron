@@ -1,18 +1,19 @@
 import React from 'react';
+import Modal from 'react-modal';
 import './App.css';
+// Custom Neuron Elements
 import NeuronStatus from './neuron-elements/status';
-import NeuronCard from './neuron-elements/card';
-import NeuronCardTag from './neuron-elements/cardtag';
 import NeuronList from './neuron-elements/list';
+import NeuronTitleCard from './neuron-elements/title-card';
+import NeuronCard from './neuron-elements/card';
+import NeuronCardTag from './neuron-elements/card-tag';
 import NeuronAssignee from './neuron-elements/assignee';
-
+//
 import './data-managment/data-manager';
+import ReactModal from 'react-modal';
 
-
-const list = '<div class="list"><div class="list-navigation"><p class="list-title" id="textarea-1" maxlength="512" contenteditable="true" spellcheck="false">To Do</p><span class="list-options"><a href="#list-options"><i class="fas fa-ellipsis-v"></i></a></span></div></div>';
 
 function App() {
-
   return (
     <div className="grid-wrapper">
       <div className="navigation">
@@ -42,6 +43,7 @@ function App() {
         <div className="main-panel">
           <div className="content" id='lists'>
             <NeuronList title="List with Cards" >
+              <NeuronTitleCard title="Test" />
               <NeuronCard title="First Card">
                 <NeuronCardTag tag="Testing" />
               </NeuronCard>
@@ -60,6 +62,7 @@ function App() {
 
       </div>
 
+      <ReactModal />
     </div>
   );
 }

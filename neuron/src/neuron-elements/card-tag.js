@@ -7,8 +7,14 @@ class NeuronCardTag extends React.Component {
     }
 
     render() {
+        const style = {
+            // Take associatedTag and get color from database / local storage
+            background: '#03ce7b',
+            color: '#000000'
+        };
+
         return (
-        <a href="#tag-02" className="card-tag" text="Tag" color="#c792ea">
+        <a href="#tag-02" className="card-tag" style={style}>
             {this.props.tag}
         </a>
         );

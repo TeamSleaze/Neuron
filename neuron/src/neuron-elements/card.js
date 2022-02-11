@@ -1,5 +1,5 @@
 import React from "react";
-import NeuronCardTag from "./cardtag";
+import NeuronCardTag from "./card-tag";
 
 class NeuronCard extends React.Component {    
     constructor(props) {
